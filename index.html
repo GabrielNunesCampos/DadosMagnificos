@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DadosMagnificos</title>
+</head>
+
+<body>
+    <h1>Bem vindo ao site do Lorde</h1>
+    <p>Se você está em busca de sorte nos dados, bem você veio ao lugar errado, pois sorte está em falta aqui</p>
+    <p>Mas se mesmo assim você quiser tentar a sorte, <b>VÁ EM FRENTE</b></p>
+    <p>Aqui a baixo você encontrará nosso simples lançador de dados, porém feito com am<b>ORR</b> supremo</p>
+    <p>Dados disponiveis: d4, d6, d8, d10, d12, d20, d100, moeda</p>
+
+    <form id="formDados" method="POST">
+        <p>
+            <label for="num_dados">Número de Dados:</label>
+        <input type="number" id="num_dados" name="num_dados" required>
+        </p>
+
+        <p>
+        <label for="tipo_dado">Tipo de Dado:</label>
+        <input type="text" id="tipo_dado" name="tipo_dado" required>
+        </p>
+
+        <p>
+        <label for="soma">Soma:</label>
+        <input type="number" id="soma" name="soma" >
+        <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+    <div id="resultados">
+    </div>
+</body>
+
+<footer>
+    <a href="http://127.0.0.1:3000/contatos.html">Contatos</a>
+</footer>
+
+<audio id="audio" src="somdado.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+<script src="audio.js"></script>
+
+</html>
